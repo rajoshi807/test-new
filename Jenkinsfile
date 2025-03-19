@@ -30,6 +30,7 @@ pipeline {
             steps {
                 echo "Deploying the application..."
             }
+            exit 1
         }
     }
 }
