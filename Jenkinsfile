@@ -31,6 +31,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo "Deploying the application..."
+                exit 1
             }
         }
     }
