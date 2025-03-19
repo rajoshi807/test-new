@@ -10,7 +10,7 @@ pipeline {
             notifyAborted: true,
             notifyNotBuilt: false,
             notifyUnstable: true,
-            url: 'https://prod-120.westus.logic.azure.com:443/workflows/76a1bb770e6d43608398e71385ec37f4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7lJZKsYcCfr6zFubyLhI9esXdNG-ExElTyg5SqpBSRo'
+            url: 'https://prod-91.westus.logic.azure.com:443/workflows/5cd2c73ee2d8442aba1a68973d4f0ddc/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27OBttiifLqn9tQXALwutxYO2af2yKE_0Pii9x3FlUo'
         ]])
     }
 
