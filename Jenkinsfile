@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     // Manually define properties, including Office 365 Webhook
-    properties([
+    options([
         pipelineTriggers([
             [$class: 'Office365ConnectorWebhookTrigger',
              webhooks: [[
