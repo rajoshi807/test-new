@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     options {
-        office365ConnectorWebhooks([[
-            name: 'Office 365',
+        teamsNotification([[
+            name: 'Trial',
             startNotification: true,
             notifySuccess: true,
             notifyFailure: true,
@@ -12,11 +12,10 @@ pipeline {
             notifyUnstable: true,
             notifyRepeatedFailure: true,
             notifyBackToNormal: true,
-            adaptiveCards: true,
-            url: 'https://prod-91.westus.logic.azure.com:443/workflows/5cd2c73ee2d8442aba1a68973d4f0ddc/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=27OBttiifLqn9tQXALwutxYO2af2yKE_0Pii9x3FlUo'
+            conversation: '{"conversationId": "a:1M8TBL2LqarOpihAzn_4xFy-xiAZfBGPZqx2GEjtCMR0-Try5yTTrXV8Z-mQ5xPp3mrRVcAB094SNOFqHGO02ieYdGxjIIVtvziAXdnIY2Egx-hNffDKyxD-TD4R3A2Qb","teamId": "","conversationType": "personal","serviceURL": "https://smba.trafficmanager.net/amer/1362721f-1a09-474d-9d91-d6de38146d5f/"}'
         ]])
     }
-
+    
     stages {
         stage('Build') {
             steps {
